@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Agencia Digital | Webs que convierten</title>
+    <meta
+      name="description"
+      content="Creamos páginas web modernas que convierten visitantes en clientes. Diseño digital y sistemas para captar más clientes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%2307FCFE' d='M32 4 58 19v26L32 60 6 45V19z'/%3E%3Cpath fill='%231F2937' opacity='.9' d='M32 13 49 23v18L32 51 15 41V23z'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <!-- El contenido se inserta por secciones para mantener el codigo facil de editar. -->
+
+    <!--
+      EDITAR LINKS (NAV):
+      - Cambia textos de menú aquí.
+      - Los IDs corresponden a secciones; si cambias un ID, actualiza el href.
+    -->
+    <header class="header" data-header>
+      <div class="container header__inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <!-- EDITAR LOGO:
+               Sustituye este SVG por tu logo (PNG/SVG) o un texto. -->
+          <span class="brand__mark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 0.9 16.2 5v8L9 17.1 1.8 13V5L9 0.9Z" fill="#07FCFE" />
+              <path d="M9 3.4 14.2 6.4v5.1L9 14.6 3.8 11.5V6.4L9 3.4Z" fill="#1F2937" opacity="0.9" />
+            </svg>
+          </span>
+          <!-- EDITAR NOMBRE:
+               Cambia el nombre de la agencia aqui. -->
+          <span class="brand__name">Digital Studios</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal" data-nav>
+          <a class="nav__link" href="#portafolio">Portafolio</a>
+          <a class="nav__link" href="#servicios">Servicios</a>
+          <a class="nav__link" href="#precios">Precios</a>
+          <a class="nav__link" href="#proceso">Proceso</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__cta btn btn--primary" href="#contacto">Solicitar</a>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-btn>
+          <span class="menu-btn__lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+    <main id="inicio">
+      <!-- HERO -->
+      <section class="hero section" aria-label="Hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <!-- EDITAR TEXTOS HERO: -->
+            <p class="kicker">Agencia digital enfocada en resultados</p>
+            <h1 class="hero__title">Creamos páginas web que convierten visitantes en clientes.</h1>
+            <p class="hero__subtitle">
+              Ayudamos a negocios a crecer con páginas web modernas, diseño digital y sistemas que captan clientes de forma
+              consistente.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--secondary" href="#portafolio">Ver nuestros trabajos</a>
+              <a class="btn btn--primary" href="#contacto">Solicitar una pagina web</a>
+            </div>
+
+            <div class="trustline">
+              <div class="trustline__item">
+                <span class="trustline__label">Entrega</span>
+                <span class="trustline__value">Rápida y clara</span>
+              </div>
+              <div class="trustline__item">
+                <span class="trustline__label">Diseño</span>
+                <span class="trustline__value">Premium minimal</span>
+              </div>
+              <div class="trustline__item">
+                <span class="trustline__label">Enfoque</span>
+                <span class="trustline__value">Conversiones</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-label="Ejemplos de páginas">
+            <!--
+              EDITAR IMAGENES HERO:
+              Reemplaza los src por imagenes reales (recomendado 1200x800).
+              Puedes usar rutas locales: ./assets/tu-imagen.jpg (si creas carpeta assets).
+            -->
+            <div class="device-stack">
+              <figure class="device device--primary">
+                <img
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
+                  alt="Ejemplo de sitio web moderno"
+                  loading="lazy"
+                />
+                <figcaption>Landing de alta conversión</figcaption>
+              </figure>
+
+              <figure class="device device--secondary">
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=70"
+                  alt="Ejemplo de interfaz y dashboard"
+                  loading="lazy"
+                />
+                <figcaption>Diseño digital y sistemas</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEGOCIOS -->
+      <section class="section section--alt" aria-label="Negocios con los que hemos trabajado">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Negocios con los que hemos trabajado</h2>
+            <p class="section__subtitle">
+              <!-- EDITAR LISTA DE NEGOCIOS: cambia nombres o sustituye por logos. -->
+              Marcas y equipos que confiaron en nuestro proceso.
+            </p>
+          </div>
+
+          <div class="logos" role="list">
+            <!-- EDITAR LOGOS/NOMBRES:
+                 Reemplaza el texto por logos (img) o nombres reales. -->
+            <div class="logo-pill" role="listitem">Clinica Nova</div>
+            <div class="logo-pill" role="listitem">Restaurante Brasa</div>
+            <div class="logo-pill" role="listitem">Inmobiliaria Atlas</div>
+            <div class="logo-pill" role="listitem">Tienda Aurora</div>
+            <div class="logo-pill" role="listitem">Consultora Delta</div>
+            <div class="logo-pill" role="listitem">Academia Zenith</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTAFOLIO -->
+      <section id="portafolio" class="section" aria-label="Portafolio">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Portafolio</h2>
+            <p class="section__subtitle">
+              Proyectos recientes de páginas web modernas y sistemas que convierten.
+              <span class="muted">Todo está organizado para que agregar proyectos sea rápido.</span>
+            </p>
+          </div>
+
+          <!--
+            EDITAR PORTAFOLIO:
+            Duplica una tarjeta .project y cambia:
+            - imagen (src)
+            - nombre del negocio
+            - descripcion
+            - resultado obtenido
+          -->
+          <div class="grid grid--3" data-reveal>
+            <article class="card project">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=70"
+                  alt="Proyecto: Clinica"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Clinica Nova</h3>
+                <p class="card__text">Rediseño completo con enfoque en confianza, agendado y velocidad.</p>
+                <div class="metric">
+                  <span class="metric__label">Resultado</span>
+                  <span class="metric__value">+42% solicitudes</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=70"
+                  alt="Proyecto: Ecommerce"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Tienda Aurora</h3>
+                <p class="card__text">Landing de catálogo con WhatsApp, formularios y sección de ofertas.</p>
+                <div class="metric">
+                  <span class="metric__label">Resultado</span>
+                  <span class="metric__value">2.1x mas mensajes</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=70"
+                  alt="Proyecto: Servicios"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Consultora Delta</h3>
+                <p class="card__text">Sitio corporativo premium con CTA claros y optimización de conversión.</p>
+                <div class="metric">
+                  <span class="metric__label">Resultado</span>
+                  <span class="metric__value">-38% rebote</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTADOS -->
+      <section class="section section--alt" aria-label="Resultados">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Resultados</h2>
+            <p class="section__subtitle">
+              <!-- EDITAR ESTADISTICAS: cambia numeros y etiquetas en las tarjetas. -->
+              Metricas que reflejan consistencia, enfoque y calidad.
+            </p>
+          </div>
+
+          <div class="stats" data-reveal>
+            <div class="stat">
+              <div class="stat__value"><span data-counter="65">65</span>+</div>
+              <div class="stat__label">páginas web creadas</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value"><span data-counter="50">50</span>+</div>
+              <div class="stat__label">clientes ayudados</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value"><span data-counter="28">28</span>%</div>
+              <div class="stat__label">mejora promedio en conversion</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section class="section" aria-label="Testimonios">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Testimonios</h2>
+            <p class="section__subtitle">
+              <!-- EDITAR TESTIMONIOS: cambia texto, nombres y cargo. -->
+              Opiniones reales (puedes reemplazarlas por reseñas de Google/WhatsApp).
+            </p>
+          </div>
+
+          <div class="grid grid--3" data-reveal>
+            <article class="card testimonial">
+              <div class="stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="card__text">
+                "Se siente como una empresa grande. El sitio quedó rápido, limpio y nos llegan más mensajes por WhatsApp."
+              </p>
+              <div class="person">
+                <span class="person__avatar" aria-hidden="true">LM</span>
+                <div class="person__meta">
+                  <div class="person__name">Laura M.</div>
+                  <div class="person__role">Gerente, Tienda</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card testimonial">
+              <div class="stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="card__text">
+                "Nos guiaron en todo: estructura, textos y llamados a la acción. El proceso fue claro y profesional."
+              </p>
+              <div class="person">
+                <span class="person__avatar" aria-hidden="true">JR</span>
+                <div class="person__meta">
+                  <div class="person__name">Javier R.</div>
+                  <div class="person__role">Dueno, Servicios</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card testimonial">
+              <div class="stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="card__text">
+                "El diseño transmite confianza y nos ayudó a cerrar más clientes. Se nota el nivel y los detalles."
+              </p>
+              <div class="person">
+                <span class="person__avatar" aria-hidden="true">AP</span>
+                <div class="person__meta">
+                  <div class="person__name">Andrea P.</div>
+                  <div class="person__role">Directora, Consultoria</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+      <section id="nosotros" class="section section--alt" aria-label="Sobre nosotros">
+        <div class="container about">
+          <div class="about__copy">
+            <div class="section__head">
+              <h2 class="section__title">Sobre nosotros</h2>
+              <p class="section__subtitle">
+                Somos un estudio enfocado en construir presencia digital premium, con un proceso claro y orientado a
+                conversiones.
+              </p>
+            </div>
+
+            <!-- EDITAR TEXTO "SOBRE":
+                 Cambia la mision y el enfoque aqui. -->
+            <p class="lead">
+              Nuestro objetivo es simple: ayudar a negocios a conseguir más clientes con páginas web modernas y sistemas
+              que facilitan el contacto.
+            </p>
+
+            <div class="founders">
+              <!--
+                EDITAR FUNDADORES:
+                - Reemplaza imagenes (src) por fotos profesionales (recomendado 900x900).
+                - Cambia nombres/cargos si aplica.
+              -->
+              <article class="founder card">
+                <div class="founder__media">
+                  <img
+                    src="https://image2url.com/r2/default/images/1773600856854-2306caf0-2e66-4f27-b347-8b4e0f21c99a.jpeg"
+                    alt="Foto profesional de Isai Espinal Frias"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Isai Espinal Frias</h3>
+                  <p class="card__text">Co-fundador. Estrategia, producto y optimización para captar clientes.</p>
+                </div>
+              </article>
+
+              <article class="founder card">
+                <div class="founder__media">
+                  <img
+                    src="https://image2url.com/r2/default/images/1773600967141-bf4d78ac-b6df-41a8-9bbd-4026cbb0263e.png"
+                    alt="Foto profesional de Cesar Luis Segura"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Cesar Luis Segura Feliz</h3>
+                  <p class="card__text">Co-fundador. Diseño digital, desarrollo frontend y experiencias premium.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="about__panel card">
+            <div class="card__body">
+              <h3 class="card__title">Lo que nos hace diferentes</h3>
+              <ul class="checklist">
+                <li>Diseño minimalista y tecnológico (premium).</li>
+                <li>Enfoque en mensajes claros y llamadas a la acción.</li>
+                <li>Integración fácil con WhatsApp y formularios.</li>
+                <li>Performance: páginas rápidas que cargan bien en móvil.</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="#contacto">Hablar con el equipo</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="section" aria-label="Servicios">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Servicios</h2>
+            <p class="section__subtitle">
+              <!-- EDITAR SERVICIOS: cambia titulos/descripciones, o agrega nuevas tarjetas. -->
+              Diseñados para convertir interés en conversaciones reales con tu negocio.
+            </p>
+          </div>
+
+          <div class="grid grid--3" data-reveal>
+            <article class="card service">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 6.5C4 5.12 5.12 4 6.5 4h11C18.88 4 20 5.12 20 6.5v8.2c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 17.2 4 16.08 4 14.7V6.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path d="M7 7.5h10M7 10.5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="card__title">Diseño de páginas web</h3>
+              <p class="card__text">Landing pages y sitios corporativos modernos, rapidos y listos para vender.</p>
+            </article>
+
+            <article class="card service">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M12 7v5l3 2"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="card__title">Optimizacion para captar clientes</h3>
+              <p class="card__text">Estructura, textos y CTA para convertir visitas en contactos medibles.</p>
+            </article>
+
+            <article class="card service">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6 4h12v16H6V4Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="card__title">Integracion con WhatsApp y formularios</h3>
+              <p class="card__text">Contacto directo: mensajes prellenados, formularios y embudos simples.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRECIOS -->
+      <section id="precios" class="section section--alt" aria-label="Planes y precios">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Planes y precios</h2>
+            <p class="section__subtitle">
+              <!-- EDITAR PRECIOS:
+                   Cambia importes y bullets de cada plan dentro de .pricing .plan -->
+              Paquetes claros. Si necesitas algo a medida, te asesoramos.
+            </p>
+          </div>
+
+          <div class="pricing" data-reveal>
+            <article class="card plan">
+              <div class="plan__top">
+                <h3 class="plan__name">Plan Básico</h3>
+                <p class="plan__price"><span class="plan__currency">RD$</span><span class="plan__amount">18,000</span></p>
+                <p class="plan__hint">Ideal para empezar rapido con presencia profesional.</p>
+              </div>
+              <ul class="checklist">
+                <li>Landing de 1 pagina</li>
+                <li>Diseño responsive</li>
+                <li>Integracion WhatsApp</li>
+                <li>Formulario de contacto</li>
+                <li>Entrega: 5-7 dias</li>
+              </ul>
+              <a class="btn btn--secondary btn--full" href="#contacto" data-plan="Básico">Quiero este plan</a>
+            </article>
+
+            <article class="card plan plan--featured" aria-label="Plan recomendado">
+              <div class="badge">Recomendado</div>
+              <div class="plan__top">
+                <h3 class="plan__name">Plan Profesional</h3>
+                <p class="plan__price"><span class="plan__currency">RD$</span><span class="plan__amount">32,000</span></p>
+                <p class="plan__hint">Perfecto para captar clientes con mas secciones y enfoque.</p>
+              </div>
+              <ul class="checklist">
+                <li>Sitio de hasta 5 secciones</li>
+                <li>Copy y estructura orientada a conversiones</li>
+                <li>Portafolio y testimonios</li>
+                <li>Optimizacion de velocidad basica</li>
+                <li>Entrega: 7-10 dias</li>
+              </ul>
+              <a class="btn btn--primary btn--full" href="#contacto" data-plan="Profesional">Solicitar ahora</a>
+            </article>
+
+            <article class="card plan">
+              <div class="plan__top">
+                <h3 class="plan__name">Plan Premium</h3>
+                <p class="plan__price"><span class="plan__currency">RD$</span><span class="plan__amount">55,000</span></p>
+                <p class="plan__hint">Para marcas que quieren un sitio top y sistema de captacion.</p>
+              </div>
+              <ul class="checklist">
+                <li>Diseño premium a medida</li>
+                <li>Secciones avanzadas + animaciones</li>
+                <li>Embudo simple (formularios + WhatsApp)</li>
+                <li>Optimizacion de conversion</li>
+                <li>Entrega: 10-15 dias</li>
+              </ul>
+              <a class="btn btn--secondary btn--full" href="#contacto" data-plan="Premium">Agendar asesoria</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESO -->
+      <section id="proceso" class="section" aria-label="Proceso de trabajo">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Proceso de trabajo</h2>
+            <p class="section__subtitle">4 pasos simples para lanzar una web moderna sin fricción.</p>
+          </div>
+
+          <div class="steps" data-reveal>
+            <article class="step card">
+              <div class="step__num">01</div>
+              <h3 class="card__title">Solicitud</h3>
+              <p class="card__text">Nos cuentas tu objetivo, negocio y el tipo de página que necesitas.</p>
+            </article>
+            <article class="step card">
+              <div class="step__num">02</div>
+              <h3 class="card__title">Estrategia</h3>
+              <p class="card__text">Definimos estructura, mensajes, CTA y estilo visual premium.</p>
+            </article>
+            <article class="step card">
+              <div class="step__num">03</div>
+              <h3 class="card__title">Desarrollo</h3>
+              <p class="card__text">Construimos la web rapida, responsive y lista para convertir.</p>
+            </article>
+            <article class="step card">
+              <div class="step__num">04</div>
+              <h3 class="card__title">Lanzamiento</h3>
+              <p class="card__text">Publicamos y dejamos todo listo para recibir clientes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section section--alt" aria-label="Contacto">
+        <div class="container contact">
+          <div class="contact__copy">
+            <div class="section__head">
+              <h2 class="section__title">Solicita tu página web</h2>
+              <p class="section__subtitle">
+                Completa el formulario y se abrira WhatsApp con un mensaje prellenado. Responderemos lo antes posible.
+              </p>
+            </div>
+
+            <div class="contact__note card">
+              <div class="card__body">
+                <h3 class="card__title">Respuesta rápida por WhatsApp</h3>
+                <p class="card__text">
+                  <!-- EDITAR CONTACTO:
+                       Cambia el numero en script.js (const WHATSAPP_NUMBER). -->
+                  Usamos WhatsApp para acelerar el inicio del proyecto y confirmar detalles.
+                </p>
+                <div class="mini">
+                  <span class="mini__label">Número</span>
+                  <span class="mini__value">+1 (829) 914-6322</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            FORMULARIO SIN BACKEND:
+            - Al enviar, JS abre https://wa.me/ + numero con texto prellenado.
+            - Edita etiquetas/opciones aqui; JS toma valores por name="".
+          -->
+          <form class="form card" data-contact-form>
+            <div class="card__body">
+              <div class="form__grid">
+                <label class="field">
+                  <span class="field__label">Nombre</span>
+                  <input class="field__input" type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Nombre del negocio</span>
+                  <input
+                    class="field__input"
+                    type="text"
+                    name="negocio"
+                    placeholder="Nombre de tu negocio"
+                    autocomplete="organization"
+                    required
+                  />
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input
+                    class="field__input"
+                    type="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+
+                <label class="field">
+                  <span class="field__label">WhatsApp</span>
+                  <input
+                    class="field__input"
+                    type="tel"
+                    name="whatsapp"
+                    placeholder="Tu número de WhatsApp"
+                    autocomplete="tel"
+                    required
+                  />
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">Tipo de página que necesita</span>
+                  <!-- EDITAR OPCIONES:
+                       Cambia o agrega opciones aqui (value y texto). -->
+                  <select class="field__input" name="tipo" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="Landing page (1 página)">Landing page (1 página)</option>
+                    <option value="Sitio corporativo">Sitio corporativo</option>
+                    <option value="Catálogo con WhatsApp">Catálogo con WhatsApp</option>
+                    <option value="E-commerce básico">E-commerce básico</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </label>
+              </div>
+
+              <button class="btn btn--primary btn--full" type="submit">Enviar por WhatsApp</button>
+
+              <p class="form__hint">
+                Al enviar aceptas ser contactado por WhatsApp para coordinar tu proyecto.
+                <span class="muted">No almacenamos tus datos en ningún servidor.</span>
+              </p>
+
+              <div class="form__error" role="alert" aria-live="polite" data-form-error hidden></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section" aria-label="Preguntas frecuentes">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Preguntas frecuentes</h2>
+            <p class="section__subtitle">Respuestas claras para tomar una decisión rápida.</p>
+          </div>
+
+          <!-- EDITAR FAQ:
+               Cambia preguntas/respuestas dentro de <details>. -->
+          <div class="faq" data-reveal>
+            <details class="faq__item" open>
+              <summary class="faq__q">¿Cuánto tarda una página web?</summary>
+              <div class="faq__a">
+                Depende del plan y del contenido. En general: Básico 5-7 días, Profesional 7-10 días, Premium 10-15 días.
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">¿La web funciona bien en celular?</summary>
+              <div class="faq__a">Sí. Todo el diseño es responsive y se prueba en móvil, tablet y desktop.</div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">¿Incluyen dominio y hosting?</summary>
+              <div class="faq__a">
+                Podemos guiarte a configurarlo. Si ya tienes hosting/dominio, lo conectamos para el lanzamiento.
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">¿Puedo editar textos e imágenes luego?</summary>
+              <div class="faq__a">
+                Sí. El código está comentado para editar rápido: textos, imágenes, proyectos, precios y testimonios.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="cta section" aria-label="Llamado a la accion final">
+        <div class="container cta__inner" data-reveal>
+          <div class="cta__copy">
+            <h2 class="cta__title">Tu negocio merece una presencia digital profesional.</h2>
+            <p class="cta__subtitle">Da el siguiente paso: una web moderna, rápida y lista para convertir.</p>
+          </div>
+          <a class="btn btn--primary btn--lg" href="#contacto">Solicitar mi página web</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.9 16.2 5v8L9 17.1 1.8 13V5L9 0.9Z" fill="#07FCFE" />
+              </svg>
+            </span>
+            <span class="brand__name">Segura &amp; Espinal Studio</span>
+          </div>
+          <p class="footer__meta">Diseño digital y sistemas para conseguir más clientes.</p>
+        </div>
+
+        <div class="footer__right">
+          <a class="footer__link" href="#portafolio">Portafolio</a>
+          <a class="footer__link" href="#precios">Precios</a>
+          <a class="footer__link" href="#contacto">Contacto</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <!-- EDITAR COPYRIGHT: -->
+        <p>&copy; <span data-year></span> Segura &amp; Espinal Studio. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <a class="floating-wa" href="#contacto" aria-label="Abrir formulario de WhatsApp">
+      <span class="floating-wa__dot" aria-hidden="true"></span>
+      WhatsApp
+    </a>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
